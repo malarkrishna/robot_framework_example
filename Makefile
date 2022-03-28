@@ -17,3 +17,4 @@ test-leaf-spine-onboarding:
 	@echo leaf_spine_onboarding
 	@echo leaf_spine_onboarding $(leaf_spine_onboarding)
 	@echo OR_PODS $(OR_PODS)
+	@echo $(SKIP_TAGS_VARS)
