@@ -1,5 +1,7 @@
 ifeq ($(leaf_spine_onboarding),true)
+echo '1'
 ifeq ($(OR_PODS), testbed1)
+echo '2'
 SKIP_TAGS_VARS += positive
 else ifeq ($(OR_PODS),testbed2)
 SKIP_TAGS_VARS += negative
@@ -12,4 +14,6 @@ endif
 
 .PHONY: test-leaf-spine-onboarding
 test-leaf-spine-onboarding:
+	@echo leaf_spine_onboarding $(leaf_spine_onboarding)
+	@echo OR_PODS $(OR_PODS)
 	robot --include $(SKIP_TAGS_VARS) test_suite/onboarding/
