@@ -12,4 +12,4 @@ endif
 
 .PHONY: test-leaf-spine-onboarding
 test-leaf-spine-onboarding:
-	robot --include $(SKIP_TAGS_VARS) test_suite/
+	robot --include $(SKIP_TAGS_VARS) test_suite/onboarding/
