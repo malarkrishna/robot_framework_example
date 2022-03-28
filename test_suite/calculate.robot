@@ -8,6 +8,8 @@ two numbers "${a}" and "${b}"
     Add input    ${a}    ${b}
 total of result is "${total}"
     Total    ${total}
+    Log    ***************TOTAL********************
+    Log    ${total}
 
 *** Test Cases ***
 Addition of two positive numbers
