@@ -5,7 +5,8 @@ def runTest(application) {
 		echo "application: $application"
 		echo pwd
 		sh "pwd"
-		dir("test-${application}") {			
+		dir("test-${application}") {	
+			sh "cd /home/developer/sdx-gm/robot_example/"
 			sh "make test-${application}"
 		}
 	}finally {
