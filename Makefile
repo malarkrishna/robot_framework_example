@@ -1,4 +1,4 @@
-ifeq ($(STAGE1),true)
+ifeq ($(leaf_spine_onboarding),true)
 ifeq ($(OR_PODS), testbed1)
 SKIP_TAGS_VARS += positive
 else ifeq ($(OR_PODS),testbed2)
