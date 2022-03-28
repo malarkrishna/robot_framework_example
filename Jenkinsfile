@@ -3,7 +3,7 @@
 def runTest(application) {
 	try {
 		echo "application: $application"
-		sh echo pwd
+		echo pwd
 		sh "pwd"
 		dir("test-${application}") {			
 			sh "make test-${application}"
