@@ -17,4 +17,3 @@ test-leaf-spine-onboarding:
 	@echo leaf_spine_onboarding
 	@echo leaf_spine_onboarding $(leaf_spine_onboarding)
 	@echo OR_PODS $(OR_PODS)
-#	robot --include $(SKIP_TAGS_VARS) test_suite/onboarding/
