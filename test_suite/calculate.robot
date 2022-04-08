@@ -2,8 +2,7 @@
 Documentation     Example Gherkin Style Test
 
 Library    AdderLibrary.py
-Library    String
-Library    DateTime
+
 
 *** Keywords ***
 two numbers "${a}" and "${b}"
@@ -12,10 +11,6 @@ total of result is "${total}"
     Total    ${total}
     Log    ***************TOTAL********************
     Log    ${total}
-    ${date}=  Get Current Date  UTC  -30 minutes  result_format=%Y-%m-%d %H
-    Log To Console  ${date}
-    ${date}=  Replace String  ${date}  ${SPACE}  T
-    Log To Console  ${date}
 
 *** Test Cases ***
 Addition of two positive numbers
