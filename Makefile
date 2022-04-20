@@ -1,6 +1,6 @@
 ifeq ($(leaf_spine_onboarding),true)
 ifeq ($(OR_PODS), testbed1)
-SKIP_TAGS_VARS += positive
+SKIP_TAGS_VARS += topolology_url
 else ifeq ($(OR_PODS),testbed2)
 SKIP_TAGS_VARS += negative
 else ifeq ($(OR_PODS),testbed3)
