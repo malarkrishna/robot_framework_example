@@ -1,5 +1,5 @@
 #!groovy
-
+topolology_url = "or-large"
 def runTest(application) {
 	
 		echo "application: $application"
