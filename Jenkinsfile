@@ -23,6 +23,24 @@ pipeline {
                  defaultValue: 'defaut value',
 		 description: 'Checking text parameter',
 	         trim: true)	 
+    separator(name: "Description", sectionHeader: "Description for Scale Test Automation (6020, 6320, 6312)", 
+	description:"6020SCALE Only used if 6320SCALE is not soaking in parallel and vice versa , Since both testbeds are using 396 shareable ONU's; 6312SCALE can run in parallel with any of these two testbeds;This Jenkin Job will run {(6020SCALE,6320SCALE-one by one),6312)} parallelly.")
+	separator(name: "TEST_ENVIRONMENT", sectionHeader: "6020SCALE Only used if 6320SCALE is not soaking in parallel and vice versa , Since both testbeds are using 396 shareable ONU's; 6312SCALE can run in parallel with any of these two testbeds;This Jenkin Job will run {(6020SCALE,6320SCALE-one by one),6312)} parallelly.",
+		separatorStyle: "border-width: 0",
+		sectionHeaderStyle: """
+			background-color: #63A4FF;
+			text-align: center;
+			padding: 4px;
+			color: #343434;
+			font-size: 16px;
+			font-weight: normal;
+			text-transform: uppercase;
+			font-family: 'Orienta', sans-serif;
+			letter-spacing: 1px;
+			font-style: italic;
+		"""
+	)
+	  
 	  
   }
 
